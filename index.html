@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>High Tech Consultancy Services | ISO 9001:2015 Certified</title>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        .hero-bg {
+            background-image: linear-gradient(rgba(17, 24, 39, 0.8), rgba(17, 24, 39, 0.7)), url('https://images.unsplash.com/photo-1521737604893-d14cc237f11d?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80');
+            background-size: cover;
+            background-position: center;
+        }
+        .whatsapp-float {
+            position: fixed;
+            width: 60px;
+            height: 60px;
+            bottom: 40px;
+            right: 40px;
+            background-color: #25d366;
+            color: #FFF;
+            border-radius: 50px;
+            text-align: center;
+            font-size: 30px;
+            box-shadow: 2px 2px 3px #999;
+            z-index: 100;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: transform 0.3s;
+        }
+        .whatsapp-float:hover {
+            transform: scale(1.1);
+            background-color: #20b85a;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+    <!-- Navigation -->
+    <nav class="bg-white shadow-md fixed w-full z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-20">
+                <div class="flex items-center">
+                    <!-- Logo / Brand Name -->
+                    <div class="flex-shrink-0 flex items-center gap-2">
+                        <div class="bg-blue-900 text-white p-2 rounded font-bold text-xl">HT</div>
+                        <div>
+                            <h1 class="font-bold text-xl text-blue-900 leading-tight">HIGH TECH</h1>
+                            <p class="text-xs text-gray-500 tracking-wider">CONSULTANCY SERVICES</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#home" class="text-gray-700 hover:text-blue-900 font-medium">Home</a>
+                    <a href="#about" class="text-gray-700 hover:text-blue-900 font-medium">About</a>
+                    <a href="#services" class="text-gray-700 hover:text-blue-900 font-medium">Services</a>
+                    <a href="#clients" class="text-gray-700 hover:text-blue-900 font-medium">Clients</a>
+                    <a href="#contact" class="bg-blue-900 text-white px-5 py-2 rounded-md hover:bg-blue-800 transition">Contact Us</a>
+                </div>
+                <!-- Mobile menu button -->
+                <div class="md:hidden flex items-center">
+                    <button id="mobile-menu-btn" class="text-gray-700 focus:outline-none">
+                        <i class="fas fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile Menu Panel -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t">
+            <a href="#home" class="block py-2 px-4 text-sm hover:bg-gray-100">Home</a>
+            <a href="#about" class="block py-2 px-4 text-sm hover:bg-gray-100">About</a>
+            <a href="#services" class="block py-2 px-4 text-sm hover:bg-gray-100">Services</a>
+            <a href="#clients" class="block py-2 px-4 text-sm hover:bg-gray-100">Clients</a>
+            <a href="#contact" class="block py-2 px-4 text-sm hover:bg-gray-100 font-bold text-blue-900">Contact Us</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-bg h-screen flex items-center justify-center pt-20">
+        <div class="text-center text-white px-4 max-w-4xl mx-auto">
+            <div class="inline-block bg-orange-500 text-white text-xs font-bold px-3 py-1 rounded-full mb-4 animate-pulse">
+                ISO 9001:2015 CERTIFIED
+            </div>
+            <h1 class="text-4xl md:text-6xl font-bold mb-6 leading-tight">Reliable Services with Uncompromising Quality</h1>
+            <p class="text-xl md:text-2xl text-gray-200 mb-8">
+                Providing Skilled & Highly Skilled Manpower to drive your growth, efficiency, and innovation.
+            </p>
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <a href="#contact" class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-8 rounded-lg transition text-lg">
+                    Get a Quote
+                </a>
+                <a href="#services" class="bg-transparent border-2 border-white hover:bg-white hover:text-blue-900 text-white font-bold py-3 px-8 rounded-lg transition text-lg">
+                    Our Services
+                </a>
+            </div>
+            <div class="mt-8 text-sm text-gray-300">
+                <i class="fas fa-check-circle text-green-400 mr-1"></i> GeM Portal Marketplace Service Provider
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h2 class="text-3xl font-bold text-blue-900 mb-2">About Our Company</h2>
+                    <div class="h-1 w-20 bg-orange-500 mb-6"></div>
+                    <p class="text-gray-600 mb-4 leading-relaxed">
+                        High Tech Consultancy Services is a leading manpower service provider specializing in the Skilled and Highly Skilled workforce segment. With a commitment to quality, reliability, and client satisfaction, we connect businesses with the right talent to drive growth.
+                    </p>
+                    <p class="text-gray-600 mb-6 leading-relaxed">
+                        Established with a vision to bridge the gap between industry demands and workforce capabilities, we have earned a reputation for delivering top-tier human resource solutions across diverse sectors.
+                    </p>
+                    
+                    <div class="bg-gray-50 p-6 rounded-lg border-l-4 border-blue-900">
+                        <h3 class="font-bold text-lg mb-3 text-gray-800">Mandatory Certifications:</h3>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm font-semibold">GST</span>
+                            <span class="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm font-semibold">EPF</span>
+                            <span class="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm font-semibold">ESIC</span>
+                            <span class="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm font-semibold">Labor Licence</span>
+                            <span class="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm font-semibold">QCI</span>
+                            <span class="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm font-semibold">ISO</span>
+                            <span class="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm font-semibold">LIN</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="space-y-6">
+                    <!-- Vision Card -->
+                    <div class="bg-white p-6 rounded-xl shadow-lg border border-gray-100 hover:shadow-xl transition transform hover:-translate-y-1">
+                        <div class="flex items-start">
+                            <div class="bg-orange-100 p-3 rounded-lg mr-4 text-orange-600">
+                                <i class="fas fa-eye text-2xl"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-bold text-xl mb-2">Our Vision</h3>
+                                <p class="text-gray-600 text-sm">To be recognized as a trusted manpower partner known for integrity, responsiveness, and a deep understanding of industry workforce needs.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Mission Card -->
+                    <div class="bg-white p-6 rounded-xl shadow-lg border border-gray-100 hover:shadow-xl transition transform hover:-translate-y-1">
+                        <div class="flex items-start">
+                            <div class="bg-blue-100 p-3 rounded-lg mr-4 text-blue-600">
+                                <i class="fas fa-rocket text-2xl"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-bold text-xl mb-2">Our Mission</h3>
+                                <p class="text-gray-600 text-sm">To deliver high-quality manpower solutions that empower our clients to achieve operational excellence through access to reliable personnel.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-blue-900">What We Do?</h2>
+                <div class="h-1 w-20 bg-orange-500 mx-auto mt-4"></div>
+                <p class="mt-4 text-gray-600">Comprehensive manpower solutions for your business needs.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Service 1 -->
+                <div class="bg-white p-8 rounded-lg shadow hover:shadow-lg transition text-center">
+                    <div class="text-blue-600 text-4xl mb-4">
+                        <i class="fas fa-users-cog"></i>
+                    </div>
+                    <h3 class="font-bold text-lg mb-3">Skilled Manpower</h3>
+                    <p class="text-gray-600 text-sm">Providing skilled and highly skilled workforce across various industries.</p>
+                </div>
+                <!-- Service 2 -->
+                <div class="bg-white p-8 rounded-lg shadow hover:shadow-lg transition text-center">
+                    <div class="text-blue-600 text-4xl mb-4">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                    <h3 class="font-bold text-lg mb-3">Recruitment Solutions</h3>
+                    <p class="text-gray-600 text-sm">End-to-end recruitment and deployment solutions tailored to you.</p>
+                </div>
+                <!-- Service 3 -->
+                <div class="bg-white p-8 rounded-lg shadow hover:shadow-lg transition text-center">
+                    <div class="text-blue-600 text-4xl mb-4">
+                        <i class="fas fa-clipboard-list"></i>
+                    </div>
+                    <h3 class="font-bold text-lg mb-3">Workforce Planning</h3>
+                    <p class="text-gray-600 text-sm">Customized workforce planning based on specific client requirements.</p>
+                </div>
+                <!-- Service 4 -->
+                <div class="bg-white p-8 rounded-lg shadow hover:shadow-lg transition text-center">
+                    <div class="text-blue-600 text-4xl mb-4">
+                        <i class="fas fa-stopwatch"></i>
+                    </div>
+                    <h3 class="font-bold text-lg mb-3">Rapid Support</h3>
+                    <p class="text-gray-600 text-sm">Rapid mobilization and replacement support to ensure business continuity.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section class="py-16 bg-blue-900 text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-bold mb-12 text-center">Why Choose Us</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="flex items-center space-x-4">
+                    <i class="fas fa-database text-orange-500 text-2xl"></i>
+                    <span class="text-lg">Strong database of vetted candidates</span>
+                </div>
+                <div class="flex items-center space-x-4">
+                    <i class="fas fa-user-tie text-orange-500 text-2xl"></i>
+                    <span class="text-lg">Experienced recruitment professionals</span>
+                </div>
+                <div class="flex items-center space-x-4">
+                    <i class="fas fa-award text-orange-500 text-2xl"></i>
+                    <span class="text-lg">Focus on quality, compliance, and timelines</span>
+                </div>
+                <div class="flex items-center space-x-4">
+                    <i class="fas fa-handshake text-orange-500 text-2xl"></i>
+                    <span class="text-lg">Long-standing relationships with clients</span>
+                </div>
+            </div>
+            <div class="mt-12 text-center italic text-gray-300 border-t border-blue-800 pt-8">
+                "At High Tech Consultancy Services, we don't just provide manpower, we deliver people who make a difference."
+            </div>
+        </div>
+    </section>
+
+    <!-- Clients Section -->
+    <section id="clients" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-blue-900">Our Esteemed Clients</h2>
+                <div class="h-1 w-20 bg-orange-500 mx-auto mt-4"></div>
+            </div>
+            
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+                <!-- Client 1 -->
+                <div class="flex flex-col items-center justify-center p-6 border rounded-lg hover:shadow-md transition">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/f/fa/Uttar_Pradesh_Government_Logo.png" alt="UP Gov" class="h-20 mb-4 object-contain">
+                    <h4 class="font-bold text-center text-sm">Government of Uttar Pradesh</h4>
+                    <p class="text-xs text-center text-gray-500">Bal Vikas Sewa & Pushtahar Dept</p>
+                </div>
+                <!-- Client 2 -->
+                <div class="flex flex-col items-center justify-center p-6 border rounded-lg hover:shadow-md transition">
+                    <div class="h-20 w-20 bg-gray-200 rounded-full flex items-center justify-center mb-4 text-gray-500">
+                        <i class="fas fa-city text-3xl"></i>
+                    </div>
+                    <h4 class="font-bold text-center text-sm">Aligarh Nagar Nigam</h4>
+                </div>
+                <!-- Client 3 -->
+                <div class="flex flex-col items-center justify-center p-6 border rounded-lg hover:shadow-md transition">
+                    <div class="h-20 w-20 bg-blue-100 rounded-full flex items-center justify-center mb-4 text-blue-800">
+                        <span class="font-bold text-xl">SIT</span>
+                    </div>
+                    <h4 class="font-bold text-center text-sm">Special Investigation Team</h4>
+                </div>
+                <!-- Client 4 -->
+                <div class="flex flex-col items-center justify-center p-6 border rounded-lg hover:shadow-md transition">
+                    <div class="h-20 w-20 bg-orange-100 rounded-full flex items-center justify-center mb-4 text-orange-800">
+                        <span class="font-bold text-xl">IB</span>
+                    </div>
+                    <h4 class="font-bold text-center text-sm">Intelligence Bureau</h4>
+                    <p class="text-xs text-center text-gray-500">Government of India</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-gray-900 text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+                <div>
+                    <h2 class="text-3xl font-bold mb-6">Let's Get In Touch</h2>
+                    <p class="text-gray-400 mb-8">Hopefully, we can work together and our projects will be successful.</p>
+                    
+                    <div class="space-y-6">
+                        <div class="flex items-start">
+                            <i class="fas fa-phone-alt mt-1 text-orange-500 mr-4"></i>
+                            <div>
+                                <h4 class="font-bold">Phone</h4>
+                                <p class="text-gray-300">+91 7570093022</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <i class="fas fa-envelope mt-1 text-orange-500 mr-4"></i>
+                            <div>
+                                <h4 class="font-bold">Email</h4>
+                                <a href="mailto:Lucknow8313@gmail.com" class="text-gray-300 hover:text-white">Lucknow8313@gmail.com</a>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <i class="fas fa-map-marker-alt mt-1 text-orange-500 mr-4"></i>
+                            <div>
+                                <h4 class="font-bold">Office Address</h4>
+                                <p class="text-gray-300">B-109 Vibhuti Khand,<br>Gomtinagar, Lucknow,<br>U.P. 226010</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-white text-gray-800 p-8 rounded-lg shadow-lg">
+                    <form>
+                        <div class="grid grid-cols-1 gap-6">
+                            <h3 class="text-2xl font-bold text-blue-900 mb-2">Send us a message</h3>
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700">Name</label>
+                                <input type="text" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm bg-gray-50 p-3 border focus:border-blue-500 focus:ring-blue-500" placeholder="Your Name">
+                            </div>
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700">Email</label>
+                                <input type="email" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm bg-gray-50 p-3 border focus:border-blue-500 focus:ring-blue-500" placeholder="you@example.com">
+                            </div>
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700">Message</label>
+                                <textarea rows="4" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm bg-gray-50 p-3 border focus:border-blue-500 focus:ring-blue-500" placeholder="How can we help?"></textarea>
+                            </div>
+                            <button type="button" class="w-full bg-blue-900 text-white font-bold py-3 px-4 rounded hover:bg-blue-800 transition">
+                                Send Message
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-950 text-gray-500 py-8 border-t border-gray-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center md:text-left flex flex-col md:flex-row justify-between items-center">
+            <p>&copy; 2024 High Tech Consultancy Services. All rights reserved.</p>
+            <div class="flex space-x-4 mt-4 md:mt-0">
+                <a href="#" class="hover:text-white"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="hover:text-white"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="hover:text-white"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/917570093022" class="whatsapp-float" target="_blank" title="Chat with us on WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- Mobile Menu Script -->
+    <script>
+        const btn = document.getElementById('mobile-menu-btn');
+        const menu = document.getElementById('mobile-menu');
+
+        btn.addEventListener('click', () => {
+            menu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>
